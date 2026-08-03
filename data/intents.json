@@ -1,0 +1,354 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello",
+        "hi there",
+        "hey",
+        "good morning",
+        "good evening",
+        "is anyone there"
+      ],
+      "responses": [
+        "Hello! How can I help with your shopping today?",
+        "Hi! Ask me about orders, returns, payments, products, or store information."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you later",
+        "that is all",
+        "thanks bye",
+        "talk later"
+      ],
+      "responses": [
+        "Goodbye! Have a great day.",
+        "Thanks for visiting. See you again!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thank you",
+        "thanks",
+        "that helped",
+        "appreciate it",
+        "great thanks",
+        "thank you so much"
+      ],
+      "responses": [
+        "You are welcome!",
+        "Glad I could help."
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": [
+        "where is my order",
+        "track my order",
+        "order status",
+        "has my package shipped",
+        "when will my order arrive",
+        "delivery update"
+      ],
+      "responses": [
+        "Open My Orders and select the order to view live tracking. For this demo, order-system integration is represented by the FAQ workflow."
+      ]
+    },
+    {
+      "tag": "return_policy",
+      "patterns": [
+        "what is the return policy",
+        "can i return an item",
+        "return a product",
+        "how many days for return",
+        "send item back",
+        "return rules"
+      ],
+      "responses": [
+        "Demo policy: unused items can be returned within 30 days with proof of purchase. Replace this response with your retailer's official policy before deployment."
+      ]
+    },
+    {
+      "tag": "refund_status",
+      "patterns": [
+        "where is my refund",
+        "refund pending",
+        "refund status",
+        "when will refund arrive",
+        "money not returned",
+        "refund processing"
+      ],
+      "responses": [
+        "Refunds are normally shown after the returned item is approved. In a production system, connect this intent to the payment provider or order database."
+      ]
+    },
+    {
+      "tag": "exchange",
+      "patterns": [
+        "exchange product",
+        "change size",
+        "replace item",
+        "wrong size",
+        "need another color",
+        "swap my item"
+      ],
+      "responses": [
+        "You can request an exchange from My Orders while the item is eligible. Availability depends on the requested size or colour."
+      ]
+    },
+    {
+      "tag": "store_hours",
+      "patterns": [
+        "when are you open",
+        "store hours",
+        "opening time",
+        "closing time",
+        "are you open sunday",
+        "shop timing"
+      ],
+      "responses": [
+        "Demo store hours are Monday–Saturday, 9:00 AM–8:00 PM. Update this response in data/intents.json for your store."
+      ]
+    },
+    {
+      "tag": "store_location",
+      "patterns": [
+        "where is the store",
+        "store location",
+        "nearest branch",
+        "shop address",
+        "find a store",
+        "branch near me"
+      ],
+      "responses": [
+        "Use the store locator in the frontend. A production version can connect this intent to a maps or branch database API."
+      ]
+    },
+    {
+      "tag": "payment_methods",
+      "patterns": [
+        "payment methods",
+        "can i pay by card",
+        "upi accepted",
+        "cash on delivery",
+        "how can i pay",
+        "wallet payment"
+      ],
+      "responses": [
+        "The demo supports common cards, UPI, net banking, and cash on delivery as configurable FAQ options."
+      ]
+    },
+    {
+      "tag": "payment_failed",
+      "patterns": [
+        "payment failed",
+        "money deducted order failed",
+        "transaction error",
+        "card declined",
+        "upi failed",
+        "checkout payment problem"
+      ],
+      "responses": [
+        "Please verify the payment status in your bank app before retrying. If money was deducted without an order, contact support with the transaction reference."
+      ]
+    },
+    {
+      "tag": "shipping_cost",
+      "patterns": [
+        "shipping charge",
+        "delivery fee",
+        "is shipping free",
+        "how much delivery",
+        "courier cost",
+        "shipping price"
+      ],
+      "responses": [
+        "Shipping charges depend on order value and destination. Configure your real free-shipping threshold in the FAQ data."
+      ]
+    },
+    {
+      "tag": "delivery_time",
+      "patterns": [
+        "how long is delivery",
+        "delivery time",
+        "when will it arrive",
+        "estimated delivery",
+        "fast delivery",
+        "shipping duration"
+      ],
+      "responses": [
+        "The estimated delivery date appears at checkout and in My Orders. Actual timing depends on inventory and destination."
+      ]
+    },
+    {
+      "tag": "product_availability",
+      "patterns": [
+        "is this in stock",
+        "product available",
+        "out of stock",
+        "when restock",
+        "stock check",
+        "availability"
+      ],
+      "responses": [
+        "Product availability should be read from the inventory service. This capstone keeps the intent ready for that integration."
+      ]
+    },
+    {
+      "tag": "product_recommendation",
+      "patterns": [
+        "recommend a product",
+        "what should i buy",
+        "best product",
+        "suggest something",
+        "help me choose",
+        "product recommendation"
+      ],
+      "responses": [
+        "Tell me your category, budget, and preferred features. A future recommender module can rank matching products."
+      ]
+    },
+    {
+      "tag": "discounts",
+      "patterns": [
+        "any discount",
+        "coupon code",
+        "offers today",
+        "sale",
+        "promo code",
+        "student discount"
+      ],
+      "responses": [
+        "Available offers should be shown on the Offers page and verified at checkout. Avoid entering coupon codes from untrusted sources."
+      ]
+    },
+    {
+      "tag": "account_help",
+      "patterns": [
+        "cannot login",
+        "forgot password",
+        "account problem",
+        "reset password",
+        "email not recognized",
+        "login issue"
+      ],
+      "responses": [
+        "Use Forgot Password on the sign-in page. For security, support staff should never ask for your password or OTP."
+      ]
+    },
+    {
+      "tag": "cancel_order",
+      "patterns": [
+        "cancel my order",
+        "stop delivery",
+        "do not ship",
+        "order cancellation",
+        "cancel purchase",
+        "remove order"
+      ],
+      "responses": [
+        "Open My Orders and choose Cancel if the order has not entered final fulfilment. Otherwise, use the return process after delivery."
+      ]
+    },
+    {
+      "tag": "damaged_item",
+      "patterns": [
+        "item arrived damaged",
+        "broken product",
+        "package damaged",
+        "defective item",
+        "product not working",
+        "received damaged goods"
+      ],
+      "responses": [
+        "Photograph the package and product, keep the labels, and create a replacement or refund request from My Orders."
+      ]
+    },
+    {
+      "tag": "wrong_item",
+      "patterns": [
+        "wrong item delivered",
+        "received another product",
+        "incorrect order",
+        "different item",
+        "order mismatch",
+        "not what i ordered"
+      ],
+      "responses": [
+        "Report the mismatch from My Orders and include a clear photo of the received item and shipping label."
+      ]
+    },
+    {
+      "tag": "loyalty_program",
+      "patterns": [
+        "loyalty points",
+        "reward program",
+        "member benefits",
+        "redeem points",
+        "customer rewards",
+        "points balance"
+      ],
+      "responses": [
+        "Returning-customer analytics can support a consent-based loyalty program. Points and benefits should come from a dedicated customer account service."
+      ]
+    },
+    {
+      "tag": "privacy_face_recognition",
+      "patterns": [
+        "why use face recognition",
+        "how is my face data used",
+        "delete facial data",
+        "face privacy",
+        "consent for face recognition",
+        "biometric information"
+      ],
+      "responses": [
+        "Face registration is optional and requires explicit consent. This demo stores a compact numerical embedding, not the uploaded image. Users should be able to opt out and request deletion."
+      ]
+    },
+    {
+      "tag": "human_agent",
+      "patterns": [
+        "talk to a person",
+        "human agent",
+        "customer support",
+        "real person",
+        "support representative",
+        "need help from staff"
+      ],
+      "responses": [
+        "I can hand this conversation to a support queue when that integration is enabled. In this demo, record the issue and contact the project administrator."
+      ]
+    },
+    {
+      "tag": "feedback",
+      "patterns": [
+        "give feedback",
+        "rate service",
+        "share review",
+        "complaint",
+        "suggestion",
+        "review my purchase"
+      ],
+      "responses": [
+        "Please share your feedback. The sentiment module will classify the overall tone and only a text hash is stored in the demo logs."
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [
+        "something unrelated",
+        "unknown question",
+        "random query"
+      ],
+      "responses": [
+        "I am not confident about that request. Please rephrase it or ask about orders, returns, payments, store details, products, or privacy."
+      ]
+    }
+  ]
+}

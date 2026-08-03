@@ -1,0 +1,13 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      SMART_RETAIL_API_KEY: ${SMART_RETAIL_API_KEY:-dev-secret-key}
+      SMART_RETAIL_DB_PATH: /app/data/smart_retail.db
+    volumes:
+      - retail-data:/app/data
+
+volumes:
+  retail-data:

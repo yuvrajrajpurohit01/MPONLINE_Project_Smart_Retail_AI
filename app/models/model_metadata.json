@@ -1,0 +1,49 @@
+{
+  "project_version": "1.0.0",
+  "generated_at": "2026-08-02T13:53:21.878163+00:00",
+  "sentiment_classes": [
+    "Negative",
+    "Neutral",
+    "Positive"
+  ],
+  "chatbot_intents": [
+    "account_help",
+    "cancel_order",
+    "damaged_item",
+    "delivery_time",
+    "discounts",
+    "exchange",
+    "feedback",
+    "goodbye",
+    "greeting",
+    "human_agent",
+    "loyalty_program",
+    "order_status",
+    "payment_failed",
+    "payment_methods",
+    "privacy_face_recognition",
+    "product_availability",
+    "product_recommendation",
+    "refund_status",
+    "return_policy",
+    "shipping_cost",
+    "store_hours",
+    "store_location",
+    "thanks",
+    "wrong_item"
+  ],
+  "product_categories": [
+    "shoes",
+    "bags",
+    "electronics",
+    "clothing",
+    "groceries"
+  ],
+  "product_model_type": "color_histogram_centroid_v1",
+  "face_database_records": 0,
+  "limitations": [
+    "The included product H5 is a synthetic demo baseline, not MobileNetV2.",
+    "The included face database is empty and must contain only consenting subjects.",
+    "The included NLP datasets are small demonstration datasets."
+  ]
+}

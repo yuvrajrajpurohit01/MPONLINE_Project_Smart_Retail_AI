@@ -1,0 +1,9 @@
+.git
+.github
+.venv
+__pycache__
+.pytest_cache
+notebooks
+*.ipynb
+.env
+smart-retail-ai-complete.zip
